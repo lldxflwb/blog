@@ -64,21 +64,45 @@ rm -rf /tmp/claude-code-skills
 
 Claude Code 会自动收集相关上下文（git diff、文件内容等），发送给 Codex CLI，然后呈现 GPT 的审查意见。
 
-一次真实的调用效果：
+下面是一次真实的调用过程。我让 Codex 审查这篇博客文章本身：
 
 ```
-> /codex 0.11 和 0.9 哪个大？
+❯ /codex 审查一下我们这篇博客文章的质量
 
-Codex 任务:
-- 指令: 比较 0.11 和 0.9 的大小
-- 上下文: 无
-- 模式: 新建会话
+⏺ Skill(codex)
+  ⎿  Successfully loaded skill
 
-session id: 019ce6c8-...
+⏺ 检测到已有 session ID: a1b2c3d4-...，需要收集博客文章内容作为上下文。
 
-## [Codex 结果]
-0.9 更大。
+⏺ Read 1 file
+
+⏺ Codex 任务:
+  - 指令: 审查博客文章，评估内容质量、结构、SEO/GEO 友好度
+  - 上下文: codex-with-claude-code.md (111行)
+  - 模式: 恢复会话 a1b2c3d4
+
+⏺ Bash(codex exec resume a1b2c3d4-... --skip-git-repo-check --json ...)
+  ⎿  Running in the background
+
+⏺ Codex 后台执行中，等待结果...
+
+⏺ session id: a1b2c3d4-...
+
+  [Codex 结果]
+  - 内容质量与深度：6.5/10
+  - 文章结构：6/10
+  - SEO 友好度：5.5/10
+  - GEO 友好度：6/10
+  - 对读者的实用价值：6/10
+
+  优先级最高的问题：
+  1. 痛点描述偏绝对，缺少案例支撑
+  2. "核心实现"还是概述，读者看完不知道怎么搭
+  3. 缺少 FAQ、限制说明、排错指南
+  ...
 ```
+
+Claude Code 自动完成了全部流程：加载 Skill → 检测到已有 session → 读取文章内容 → 后台调用 Codex → 呈现审查结果。整个过程无需手动干预。
 
 ## 实现原理
 
