@@ -3,7 +3,7 @@ title: "让 Claude Code 调用 Codex CLI：获取 GPT 的第二意见"
 date: 2026-03-13
 tags: ["claude-code", "codex", "ai-tools", "skills"]
 summary: "在 Claude Code 中集成 Codex CLI，实现一键获取 GPT 模型的独立审查意见，并支持多轮对话的 session 恢复。"
-draft: true
+draft: false
 ---
 
 ## 为什么需要第二意见？
