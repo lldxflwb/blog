@@ -196,7 +196,7 @@ Codex CLI 支持 `codex exec resume <SESSION_ID>` 恢复之前的对话。Skill 
 不会。Skill 强制使用 `--sandbox read-only` 模式，Codex CLI 无法写入任何文件。
 
 **需要付费吗？**
-Codex CLI 使用 OpenAI API，需要有效的 API 额度。具体成本取决于任务复杂度和使用的模型。
+Codex CLI 使用 OpenAI 的订阅额度，免费用户也有一定额度可用，不需要额外购买 API credits。如果你有 ChatGPT Plus 等付费订阅，额度会更充裕。
 
 **Session 丢了怎么办？**
 Claude Code 对话上下文被压缩时，session ID 可能丢失。丢失后下次 `/codex` 会自动创建新 session，不影响使用，只是失去之前的对话记忆。
