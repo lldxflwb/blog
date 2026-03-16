@@ -2,6 +2,7 @@ baseURL = 'https://lldxflwb.github.io/blog/'
 languageCode = 'zh-cn'
 title = "Karl's AI Notes"
 theme = 'PaperMod'
+googleAnalytics = 'G-WSH260T32E'
 
 [params]
   description = '关于 AI 工具、编程与效率的阶段性总结'
