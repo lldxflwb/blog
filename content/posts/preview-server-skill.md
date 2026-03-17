@@ -57,10 +57,10 @@ Claude 会自动写 TikZ 代码、编译、返回一个可点击的 URL。整个
   ⎿  Wrote 25 lines to flowchart.tex
 
 ⏺ Bash(python3 ~/.claude/skills/tikz/scripts/render_tikz.py flowchart.tex)
-  ⎿  http://10.8.0.2:9094/flowchart_20260316_111125_932281.svg
+  ⎿  http://127.0.0.1:8073/flowchart_20260316_111125_932281.svg
       /Users/karl/.cache/tikz-skill/renders/flowchart_20260316_111125_932281.png
 
-⏺ 渲染完成：http://10.8.0.2:9094/flowchart_20260316_111125_932281.svg
+⏺ 渲染完成：http://127.0.0.1:8073/flowchart_20260316_111125_932281.svg
 ```
 
 ### AI 自动校验图表质量
@@ -71,7 +71,7 @@ Claude 会自动写 TikZ 代码、编译、返回一个可点击的 URL。整个
 
 ### Plan 文档阅读
 
-打开预览服务首页（`http://<your-host>:9094/`），你会看到两个区域：
+打开预览服务首页（`http://127.0.0.1:8073/`），你会看到两个区域：
 
 - **计划** —— `~/.claude/plans/` 下的所有 plan 文档，按创建时间倒序
 - **TikZ 渲染** —— 所有渲染过的 SVG 缩略图
@@ -146,8 +146,8 @@ skills/tikz/
 
 ```json
 {
-  "host": "10.8.0.2",
-  "port": 9094,
+  "host": "192.168.1.100",
+  "port": 8073,
   "default_view_mode": "eink"
 }
 ```
