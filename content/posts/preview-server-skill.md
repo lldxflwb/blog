@@ -104,7 +104,7 @@ Plan viewer 会自动内联展示，图片居中、宽度自适应。
 
 ## 架构设计
 
-![Preview Server 架构图](/images/preview-server/architecture.svg)
+![Preview Server 架构图](/blog/images/preview-server/architecture.svg)
 
 整个 skill 的核心思路是 **"脚本负责生产，server 负责展示"**：
 
