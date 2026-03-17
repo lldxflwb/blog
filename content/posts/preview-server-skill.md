@@ -148,7 +148,7 @@ skills/tikz/
 {
   "host": "192.168.1.100",
   "port": 8073,
-  "default_view_mode": "eink"
+  "default_view_mode": "normal"
 }
 ```
 
