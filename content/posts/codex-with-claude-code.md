@@ -1,8 +1,8 @@
 ---
 title: "让 Claude Code 调用 Codex CLI：获取 GPT 的第二意见"
 date: 2026-03-13
-tags: ["claude-code", "codex", "ai-tools", "skills"]
-summary: "在 Claude Code 中集成 Codex CLI，实现一键获取 GPT 模型的独立审查意见，并支持多轮对话的 session 恢复。"
+tags: ["claude-code", "codex", "ai-tools", "skills", "gpt", "openai", "code-review", "ai-coding", "developer-tools", "multi-model", "anthropic", "cli"]
+summary: "在 Claude Code 中集成 OpenAI Codex CLI，一键获取 GPT 模型的独立代码审查意见。支持多轮对话 session 恢复，自动收集 git diff 上下文，后台异步执行。让两个 AI 模型协作，弥补单一模型的盲区。开源免费，5 分钟安装。"
 draft: false
 ---
 

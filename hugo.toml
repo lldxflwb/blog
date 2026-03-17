@@ -5,22 +5,28 @@ theme = 'PaperMod'
 googleAnalytics = 'G-WSH260T32E'
 
 [params]
-  description = '关于 AI 工具、编程与效率的阶段性总结'
+  description = 'Claude Code Skills 开发笔记：AI 编程工具、Codex CLI 集成、TikZ 图表渲染、墨水屏阅读器、开发效率提升'
+  keywords = ['Claude Code', 'AI 编程', 'Codex', 'TikZ', 'Skills', 'LaTeX', '墨水屏', '开发工具', 'Anthropic', 'GPT']
+  author = 'Karl'
   defaultTheme = 'auto'
   ShowReadingTime = true
-  ShowShareButtons = false
+  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
 
-[params.homeInfoParams]
-  Title = "Hi there"
-  Content = "AI 工具使用心得与技术笔记"
+  [params.homeInfoParams]
+    Title = "Karl's AI Notes"
+    Content = "Claude Code Skills 开发实践：AI 工具集成、图表渲染、墨水屏阅读器"
 
-[[params.socialIcons]]
-  name = 'github'
-  url = 'https://github.com/lldxflwb'
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/lldxflwb'
+
+  # Open Graph / Twitter Card
+  [params.cover]
+    responsiveImages = true
 
 [menu]
   [[menu.main]]

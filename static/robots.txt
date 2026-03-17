@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lldxflwb.github.io/blog/sitemap.xml
