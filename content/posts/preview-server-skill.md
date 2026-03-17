@@ -1,8 +1,8 @@
 ---
 title: "用 Claude Code Skill 搭建个人预览服务：TikZ 渲染 + 墨水屏阅读器"
 date: 2026-03-16
-tags: ["claude-code", "skills", "tikz", "e-ink", "preview-server"]
-summary: "一个 Claude Code Skill 实现的本地预览服务：TikZ 图表实时渲染为 SVG，Plan 文档墨水屏友好阅读，AI 自动校验图表质量，一套基础设施服务多种内容。"
+tags: ["claude-code", "skills", "tikz", "e-ink", "preview-server", "latex", "svg", "diagram", "ai-coding", "developer-tools", "markdown-reader", "http-server", "python", "automation", "anthropic"]
+summary: "用 Claude Code Skill 搭建本地预览服务器：LaTeX TikZ 图表一键渲染为 SVG，Markdown 文档墨水屏友好阅读，AI 自动校验图表质量。支持架构图、流程图、状态机等可视化，内置分页翻页、目录导航、双模式切换。开源免费，5 分钟安装。"
 draft: false
 ---
 
