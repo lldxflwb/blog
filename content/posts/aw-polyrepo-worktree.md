@@ -36,7 +36,7 @@ aw new --dir /tmp/my-feature -b feature/login
 
 aw 扫描当前目录下的所有 git 仓库，对每个仓库执行 `git worktree add`，统一使用同一个分支名。完成后你得到一个完整的平行工作区：
 
-![aw new 工作流程](/images/aw/workflow.svg)
+![aw new 工作流程](/blog/images/aw/workflow.svg)
 
 每个 worktree 都是一个真实的 git 工作目录，有自己的分支，互不干扰。AI 上下文文件通过软链接共享，改一处处处生效。
 
