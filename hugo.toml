@@ -40,5 +40,14 @@ googleAnalytics = 'G-WSH260T32E'
     url = '/tags/'
     weight = 20
 
+[mediaTypes."text/plain"]
+  suffixes = ['txt']
+
+[outputFormats.SitemapTxt]
+  mediaType = "text/plain"
+  baseName = "sitemap"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']
+  home = ['HTML', 'RSS', 'JSON', 'SitemapTxt']
